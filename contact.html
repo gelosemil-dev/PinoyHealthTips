@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Pinoy Health Tips</title>
+  <meta name="description" content="Send your skincare, hygiene or external health question to the Pinoy Health Tips team, and read frequently asked questions.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23059669'/%3E%3Cpath d='M16 25c5-3.5 8-7.5 8-12a8 8 0 0 0-16 0c0 4.5 3 8.5 8 12z' fill='none' stroke='white' stroke-width='2.2' stroke-linejoin='round'/%3E%3Cpath d='M10.5 14.5h3l1.6-2.6L17 17l1.4-2.5h3' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">
+          <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 25c5-3.5 8-7.5 8-12a8 8 0 0 0-16 0c0 4.5 3 8.5 8 12z" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M10.5 14.5h3l1.6-2.6L17 17l1.4-2.5h3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Pinoy Health Tips</span>
+          <span class="brand-tag">External Health &amp; Skin Care Guide</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="tips.html">Health Tips</a>
+        <a href="advice.html">Expert Advice</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary btn-sm">Ask an Expert</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= PAGE HEAD ================= -->
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span class="cur">Contact</span>
+      </nav>
+      <h1>Get in Touch</h1>
+      <p>Questions, corrections, topic requests or partnership ideas — we read everything. Choose a topic so your message reaches the right person.</p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section">
+    <div class="container contact-grid">
+
+      <div class="form-card">
+        <div class="form-success" role="status" aria-live="polite">
+          Salamat! Your message has been received. Our team replies within 2–3 working days — check your inbox for a confirmation.
+        </div>
+
+        <h2 style="font-size:1.5rem;">Send us a message</h2>
+        <p class="muted" style="font-size:.95rem;">Fields marked with <span style="color:#e11d48;">*</span> are required.</p>
+
+        <form data-contact-form novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name <span class="req">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Juan dela Cruz" required>
+              <span class="field-error">Please tell us your name.</span>
+            </div>
+            <div class="field">
+              <label for="email">Email address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="juan@email.com" required>
+              <span class="field-error">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="topic">What is this about? <span class="req">*</span></label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose a topic…</option>
+              <option value="skincare">Skincare question</option>
+              <option value="sun">Sun protection</option>
+              <option value="hygiene">Hygiene &amp; first aid</option>
+              <option value="beauty">Beauty &amp; grooming routines</option>
+              <option value="correction">Correction to an article</option>
+              <option value="other">Something else</option>
+            </select>
+            <span class="field-error">Please choose a topic.</span>
+          </div>
+
+          <div class="field">
+            <label for="message">Your message <span class="req">*</span></label>
+            <textarea id="message" name="message" placeholder="Describe your question in a few sentences. Please avoid sending photos of sensitive areas — we can't diagnose from messages." required></textarea>
+            <span class="field-error">Please write at least 15 characters so we can help.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6L4 12z"/></svg>
+          </button>
+
+          <p class="muted" style="font-size:.82rem;margin-top:14px;">By sending, you agree that we may use your message for editorial purposes in anonymized form. We never publish your email address.</p>
+        </form>
+      </div>
+
+      <div class="grid" style="gap:18px;">
+        <div class="info-card">
+          <span class="ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>
+          </span>
+          <div>
+            <h4>Email us</h4>
+            <p>hello@pinoyhealthtips.ph<br>For corrections: editorial@pinoyhealthtips.ph</p>
+          </div>
+        </div>
+
+        <div class="info-card blue">
+          <span class="ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c4-3.5 7-7 7-11a7 7 0 1 0-14 0c0 4 3 7.5 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          </span>
+          <div>
+            <h4>Editorial office</h4>
+            <p>Unit 402, 120 Sct. Borromeo St.<br>Quezon City, Metro Manila, Philippines</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <div>
+            <h4>Response hours</h4>
+            <p>Monday to Friday, 9:00 AM – 5:00 PM (PHT)<br>Replies within 2–3 working days.</p>
+          </div>
+        </div>
+
+        <div class="info-card blue">
+          <span class="ico">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.4-3 8-7 9.5-4-1.5-7-5.1-7-9.5V6l7-3z"/><path d="M12 9v4M12 16h.01"/></svg>
+          </span>
+          <div>
+            <h4>Medical emergencies</h4>
+            <p>This form is not monitored 24/7. For emergencies, go to the nearest hospital or call <b>911</b>.</p>
+          </div>
+        </div>
+
+        <div class="widget" style="padding:22px 24px;">
+          <h4>Before you write</h4>
+          <ul class="widget-list" style="font-size:.92rem;">
+            <li>Check <a href="tips.html">Health Tips</a> — most routine questions are covered there.</li>
+            <li>Browse <a href="blog.html">recent articles</a> for in-depth guides.</li>
+            <li>Read answers in <a href="advice.html#qa">Ask the Experts</a>.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section section-soft" id="faq">
+    <div class="container" style="max-width:840px;">
+      <div class="section-head center">
+        <span class="eyebrow blue">Frequently Asked Questions</span>
+        <h2>Quick answers before you ask</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">Can you diagnose my skin condition?<span class="plus">+</span></button>
+        <div class="faq-a">No. We publish general educational information only, and we cannot diagnose or prescribe from a message. If a condition is painful, spreading, bleeding or not improving after two weeks of consistent care, please see a dermatologist or your barangay health center.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">Do you accept sponsored posts or product placements?<span class="plus">+</span></button>
+        <div class="faq-a">No. Articles are written from public health guidance and peer-reviewed literature. We don't accept payment for recommendations, and any future partnership would be clearly labeled as sponsored.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">How do I request a topic or ask a question for the panel?<span class="plus">+</span></button>
+        <div class="faq-a">Use the contact form above and pick the closest topic. A few reader questions are selected each week for the <a href="advice.html#qa">Ask the Experts</a> section — we publish them anonymously.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">I found an error in an article. What should I do?<span class="plus">+</span></button>
+        <div class="faq-a">Thank you — corrections make the site better. Send the article title and what looks wrong to editorial@pinoyhealthtips.ph or choose "Correction to an article" in the form. Verified corrections are applied within a few working days.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false">Is the newsletter free, and how do I unsubscribe?<span class="plus">+</span></button>
+        <div class="faq-a">Yes, the weekly digest is free. Every email includes a one-click unsubscribe link, and we never sell or share subscriber addresses.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-note">
+        <b>Note:</b> Pinoy Health Tips publishes general educational information about external health and skin care. It is not a substitute for diagnosis or treatment by a licensed professional. See a doctor or dermatologist for persistent, painful or worsening symptoms.
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">
+              <svg width="22" height="22" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M16 25c5-3.5 8-7.5 8-12a8 8 0 0 0-16 0c0 4.5 3 8.5 8 12z" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/>
+                <path d="M10.5 14.5h3l1.6-2.6L17 17l1.4-2.5h3" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">Pinoy Health Tips</span>
+              <span class="brand-tag" style="color:rgba(255,255,255,.6);">External Health &amp; Skin Care Guide</span>
+            </span>
+          </a>
+          <p>Your Pinoy guide to external health and skin care — practical, reviewed and made for the tropical everyday.</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3 0-1.3-.13-2.45-.13-2.43 0-4.1 1.48-4.1 4.2v2.34H7.4V13h2.75v8h3.35z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 3h3l-6.6 7.5L21.7 21h-5.9l-4.3-5.6L6.4 21H3.3l7-8L2.6 3h6l3.9 5.2L17.6 3zm-1 16.2h1.7L7.9 4.7H6.1l10.5 14.5z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="tips.html">Health Tips</a></li>
+            <li><a href="advice.html">Expert Advice</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Topics</h4>
+          <ul class="footer-links">
+            <li><a href="tips.html#skincare">Skin Care</a></li>
+            <li><a href="tips.html#hygiene">Personal Hygiene</a></li>
+            <li><a href="tips.html#beauty">Beauty &amp; Grooming</a></li>
+            <li><a href="tips.html#sun">Sun Protection</a></li>
+            <li><a href="tips.html#firstaid">First Aid &amp; Safety</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Stay Healthy</h4>
+          <ul class="footer-links">
+            <li><a href="article-skincare-routine.html">5-step skincare routine</a></li>
+            <li><a href="article-sunscreen.html">Sunscreen guide for Pinoys</a></li>
+            <li><a href="article-heat-rash.html">Preventing heat rash</a></li>
+            <li><a href="advice.html#qa">Ask the experts</a></li>
+            <li><a href="contact.html">Contact our team</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Pinoy Health Tips. All rights reserved.</span>
+        <ul>
+          <li><a href="contact.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Privacy</a></li>
+          <li><a href="contact.html">Editorial policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" type="button" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
